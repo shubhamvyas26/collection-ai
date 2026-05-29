@@ -1,0 +1,33 @@
+{
+  "name": "collections-strategy-optimizer",
+  "version": "1.0.0",
+  "description": "AI-powered collections strategy optimizer for delinquent borrowers",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/tests/",
+      "src/server.js",
+      "src/data/"
+    ]
+  }
+}
